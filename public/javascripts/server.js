@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 
 
 app.get("/", (req, res) => {
-    res.send("<h1>Recipe's page</h1>");
+    res.render("public/index");
 });
 
 /*/* GET home page. */
@@ -48,4 +48,4 @@ app.get('/recipe/:food', (req, res) => {
 
 
 //app.post("/recipe")    
-app.listen(port, () => console.log ('Server listening a port ${port}!'));
+app.listen(port, () => console.log ('Listening... '));
