@@ -18,13 +18,13 @@ const app = express();
 const port = 1234;
 
 
-app.get('/', (req, res) => {
+app.get('./', (req, res) => {
         res.json(recipe);
         console.log(recipe);
 
     });
 
-app.get('/recipe/:food', (req, res) => {
+app.get('/public/recipe/:food', (req, res) => {
         let food = recipe.id;
 
         console.log(recipe[req.params.food]);
