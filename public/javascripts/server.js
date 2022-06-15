@@ -17,7 +17,7 @@ const app = express();
 const port = 1234;
 app.set('view engine', 'ejs');
 
-var json = require("/LUT/week_4/recipeApp/public/recipe/recipe.json");
+var json = require("./public/recipe/recipe.json");
 var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
