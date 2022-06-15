@@ -12,17 +12,27 @@ let recipe = {
 
 }
 
-const express = require('express');
+const express = require("express");
 const app = express();
-
 const port = 1234;
+app.set('view engine', 'ejs');
 
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
+    res.send("<h1>Recipe's page</h1>");
+});
+
+/*/* GET home page. */
+  /*router.get("/", (req, res, next) =>{
+  res.render('index');
+});*/
+
+
+/*app.get('/', (req, res) => {
         res.json(recipe);
         console.log(recipe);
 
-    });
+    });*/
 
 app.get('/recipe/:food', (req, res) => {
         let food = recipe.id;
