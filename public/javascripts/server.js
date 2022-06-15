@@ -17,14 +17,23 @@ const app = express();
 const port = 1234;
 app.set('view engine', 'ejs');
 
-const json = require("/LUT/week_4/recipeApp/public/recipe/recipe.json");
+var json = require("/LUT/week_4/recipeApp/public/recipe/recipe.json");
 var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get("/", (req, res) => {
-    res.render("index");
+    var nameto = json.pasta.name;
+    var insto = json.pasta.instructions;
+    var ingto = json.pasta.ingredients;
+    console.log(nameto);
+    var tagline = "noTAG!!!!";
+    res.render("index", {
+        nameto: nameto,
+        insto: insto,
+        ingto: ingto
+      });
 });
 
 /*/* GET home page. */
@@ -42,6 +51,8 @@ app.get("/", (req, res) => {
 app.get('/recipe/:food', (req, res) => {
         let food = json.name;
 
+        //var nameJ = JSON.parse(json);
+        
         console.log(json);
 
         //res.json(recipe[req.params.food]);

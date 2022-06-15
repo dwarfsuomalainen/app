@@ -1,16 +1,24 @@
 {
-    
-    "pasta":{
+    "pasta":
+    {
     "name": "pasta",
-    "instructions": ["cook fast","8 mins"],
-    "ingredients": ["pasta","water","salt"]},
-    "pizza" : {
+    "ingredients": ["pasta","water","salt"],
+    "instructions": ["cook fast","8 mins"]
+    
+},
+    "pizza" : 
+    {
     "name": "pizza",
-    "instructions": ["bake ","14,50 mins"],
-    "ingredients": ["dough","much meatt","sauce"]},
-    "lasagna" : {
+    "ingredients": ["dough","much meatt","sauce"],
+    "instructions": ["bake ","14,50 mins"]
+    
+},
+    "lasagna" : 
+    {
     "name": "lasaggna",
-    "instructions": ["boil", "10 mins 5 mins cool","bake","14 mins"],
-    "ingredients": ["dough","meat","sauce"]}
+    "ingredients": ["dough","meat","sauce"],
+    "instructions": ["boil", "10 mins 5 mins cool","bake","14 mins"]
+    
+}
 
 }
