@@ -7,7 +7,7 @@ let recipe = {
     instructions: ["bake ","14,50 mins"],
     ingredients: ["dough","much meatt","sauce"]},
     lasagna : {name: "lasaggna",
-    instructions: ["boil", "10 mins","bake","14 mins"],
+    instructions: ["boil", "10 mins 5 mins cool","bake","14 mins"],
     ingredients: ["dough","meat","sauce"]}
 
 }
