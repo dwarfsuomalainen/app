@@ -1,5 +1,5 @@
 
-let recipe = {
+/*let recipe = {
     pasta : {name: "pasta",
     instructions: ["cook fast","8 mins"],
     ingredients: ["pasta","water","salt"]},
@@ -11,15 +11,20 @@ let recipe = {
     ingredients: ["dough","meat","sauce"]}
 
 }
-
+*/
 const express = require("express");
 const app = express();
 const port = 1234;
 app.set('view engine', 'ejs');
 
+const json = require("/LUT/week_4/recipeApp/public/recipe/recipe.json");
+var path = require('path');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.get("/", (req, res) => {
-    res.render("public/index");
+    res.render("index");
 });
 
 /*/* GET home page. */
@@ -35,11 +40,10 @@ app.get("/", (req, res) => {
     });*/
 
 app.get('/recipe/:food', (req, res) => {
-        let food = recipe.id;
+        let food = json.name;
 
-        console.log(recipe[req.params.food]);
+        console.log(json);
 
-        console.log(recipe[req.params.food]);
         //res.json(recipe[req.params.food]);
         res.json({name: req.params.food});
         

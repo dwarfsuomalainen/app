@@ -1,0 +1,16 @@
+{
+    
+    "pasta":{
+    "name": "pasta",
+    "instructions": ["cook fast","8 mins"],
+    "ingredients": ["pasta","water","salt"]},
+    "pizza" : {
+    "name": "pizza",
+    "instructions": ["bake ","14,50 mins"],
+    "ingredients": ["dough","much meatt","sauce"]},
+    "lasagna" : {
+    "name": "lasaggna",
+    "instructions": ["boil", "10 mins 5 mins cool","bake","14 mins"],
+    "ingredients": ["dough","meat","sauce"]}
+
+}
