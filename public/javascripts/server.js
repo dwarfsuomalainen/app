@@ -18,13 +18,13 @@ const app = express();
 const port = 1234;
 
 
-app.get('./', (req, res) => {
+app.get('/', (req, res) => {
         res.json(recipe);
         console.log(recipe);
 
     });
 
-app.get('/public/recipe/:food', (req, res) => {
+app.get('/recipe/:food', (req, res) => {
         let food = recipe.id;
 
         console.log(recipe[req.params.food]);
@@ -35,21 +35,7 @@ app.get('/public/recipe/:food', (req, res) => {
         
     });
 
-/*let out = document.createElement('h2');
-let recipes = document.getElementById ('recipe');
-recipes.appendChild(out);
-out.innerHTML({name: req.params.food});*/
 
 
 //app.post("/recipe")    
 app.listen(port, () => console.log ('Server listening a port ${port}!'));
-
-
-
-/*const http = require ('http');
-console.log('it runs');
-http.createServer(function(req,res) {
-res.write('It works');
-res.end();
-console.log('response ended');
-}).listen(3000);*/
