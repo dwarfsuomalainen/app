@@ -60,6 +60,12 @@ app.get('/recipe/:food', (req, res) => {
         
     });
 
+app.post("/recipe/", (req, res) =>{
+
+    console.log(req.body);
+    res.send(req.body);
+
+});
 
 
 //app.post("/recipe")    
