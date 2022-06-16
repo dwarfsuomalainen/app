@@ -56,7 +56,7 @@ app.get('/recipe/:food', (req, res) => {
         console.log(json);
 
         //res.json(recipe[req.params.food]);
-        res.json({name: req.params.food});
+        res.json({name: req.params.id});
         
     });
 

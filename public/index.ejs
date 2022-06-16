@@ -1,19 +1,32 @@
 <html>
 
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
   <title>Recipe</title>
     <meta charset="UTF-8" />
-    <script src="/server.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
+  </head>
 
 <body>
 
-  <h1>Recipes</h1>
+  <h1>Here is some Italian stuff</h1>
+  <ul> 
+    <li>
+      <strong><%= nameto %></strong>
+    </li>
+    <li>
+      prepare the <%= ingto %>
+    </li>
+    <li>
+      you need to <%= insto %>
+    </li>
+
+
+  </ul>
+
+  <h2>Add new recipe</h2>
   <p>Some italian</p>
+
 
 <input type="text" id="name-text">
 <h4>Ingredients</h4>
@@ -22,6 +35,9 @@
 <h4>instructions</h4>
 <textarea id="instructions-text"></textarea>
 <button id="add-instruction" type="button">Add instruction</button>
+<label for="image-input">Choose your photo:
+</label>
+<input type="file" id="image-input" accept="image/png; image/jpeg">
 <button id="submit" type="submit">Submit</button>
 </body>
 
